@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --tl-bg: #0b0e1a;
+  --tl-panel: #121729;
+  --tl-border: #2a3452;
+  --tl-text: #e4e9f7;
+  --tl-muted: #8f9bb8;
+  --tl-accent: #7c6cff;
+  --tl-critical: #ff5d73;
+  --tl-high: #ff9a52;
+  --tl-medium: #f5b942;
+  --tl-low: #5cc8ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--tl-bg);
+  color: var(--tl-text);
+  font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  font-size: 13px;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom scrollbars matching IDE */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0b0e1a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #2a3452;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #3d4a6f;
+}
+
+/* Monaco decoration wavy underlines */
+.monaco-wavy-critical {
+  text-decoration: underline wavy #ff5d73 1.5px;
+  text-underline-offset: 3px;
+}
+
+.monaco-wavy-high {
+  text-decoration: underline wavy #ff9a52 1.5px;
+  text-underline-offset: 3px;
+}
+
+.monaco-wavy-medium {
+  text-decoration: underline wavy #f5b942 1.5px;
+  text-underline-offset: 3px;
+}
+
+.monaco-wavy-low {
+  text-decoration: underline wavy #5cc8ff 1.5px;
+  text-underline-offset: 3px;
+}
+
+/* Monaco gutter severity markers */
+.monaco-glyph-critical {
+  background: #ff5d73;
+  width: 6px !important;
+  margin-left: 5px;
+  border-radius: 1px;
+}
+
+.monaco-glyph-high {
+  background: #ff9a52;
+  width: 6px !important;
+  margin-left: 5px;
+  border-radius: 1px;
+}
+
+.monaco-glyph-medium {
+  background: #f5b942;
+  width: 6px !important;
+  margin-left: 5px;
+  border-radius: 1px;
+}
+
+.monaco-glyph-low {
+  background: #5cc8ff;
+  width: 6px !important;
+  margin-left: 5px;
+  border-radius: 1px;
+}
+
+/* Monaco line highlight */
+.monaco-line-highlight-critical {
+  background: rgba(255, 93, 115, 0.12);
+}
+
+.monaco-line-highlight-high {
+  background: rgba(255, 154, 82, 0.12);
+}
+
+.monaco-line-highlight-medium {
+  background: rgba(245, 185, 66, 0.12);
+}
+
+.monaco-line-highlight-low {
+  background: rgba(92, 200, 255, 0.12);
+}
